@@ -6,7 +6,7 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 })
 export class NoticiasService {
   private url = 'https://api.newscatcherapi.com/v2/search?q=Google';
-  private apiKey = '';
+  private apiKey = 'P8cU5P6LWMO7t0d6o68wMlZKYIn8GlBx_O8Tdkrwquo';
 
   constructor(private http: HttpClient) { }
 
