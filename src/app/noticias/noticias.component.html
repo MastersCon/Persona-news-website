@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Noticias RG</title>
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-3" *ngFor="let noticia of noticias">
+      <div class="card" style="width: 18rem;">
+        <img [src] = "noticia.media" class="card-img-top" alt="Tu-NoticiasRG">
+        <div class="card-body">
+          <h5 class="card-title">{{ noticia.title }}</h5>
+          <p class="card-text">{{ noticia.excerpt }}</p>
+          <a class="btn btn-primary" (click)="aceptar(noticia)"> Leer mas...</a>
+          <p class="card-text"><small class="text-muted">Fecha Publicacion {{noticia.published_date}}</small></p>
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+  <a>Mostrar noticias</a>
+</body>
+</html>
